@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/global.html :: head-files"></head>
+
+<body>
+
+  <nav th:replace="common/global.html :: global-navbar"></nav>
+  	<div class="containter-fluid">
+	<form th:action="@{/receipe}" th:object="${receipe}" method="POST">
+
+		<div class="box">
+			<h1>Title</h1>
+			<input type="text" th:field="*{title}"/>
+			<h3>Source/Inspiration</h3>
+			<input type="text" th:field="*{source}">
+		</div>
+
+		<div class="active-container">
+
+
+			<div class="box">
+				<h2>Ingredients</h2>
+				<div class="removeable-input">
+					<input id="ingredient-0" type="text" th:field="*{ingredients}"/>
+					<button type="button" class="item__delete--btn">&times;</button>
+				</div>
+			</div>
+
+			<div class="box">
+				<h2>Steps</h2>
+				<div class="removeable-input">
+					<input id="step-0" type="text" th:field="*{steps}">
+					<button type="button" class="item__delete--btn">&times;</button>
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+
+	</form>
+
+</div>
+
+
+
+	<script type="text/javascript" th:src="@{/js/app.js}"></script>
+  <div th:replace="common/global.html :: footer-files"></div>
+
+
+</body>
+
+</html>

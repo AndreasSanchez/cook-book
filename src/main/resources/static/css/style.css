@@ -1,0 +1,52 @@
+*:focus {
+    outline: 0;
+}
+
+body {
+  background-color:  #3797a4;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+input {
+  margin-bottom: 3%;
+  border: solid 1px  #3797a4;
+  border-radius: 10px;
+  width: 90%;
+  height: 2.5rem;
+}
+
+#header {
+  background-color: #8ccbbe;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.box {
+  width: 350px;
+  margin: 50px auto;
+  background:  #8ccbbe;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.removeable-input {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.item__delete--btn {
+	position: absolute;
+	right: 1em;
+	top: 0;
+	bottom: 0;
+	line-height: 40px;
+	background: none;
+	border: none;
+}
+
+.containter-fluid {
+	padding-top: 3%;
+}
